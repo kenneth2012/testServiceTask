@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0"
+           targetNamespace="http://eclipse.org/testServiceTask/src/Calculator"
+           name="Calculator">
+           	
+    <component name="CalculatorServiceComponent">
+		<implementation.java class="com.test.output.InvokeWS"/>
+        	<reference name="calWS">
+        		<binding.ws uri="http://localhost:8080/CalculatorWebApp/CalculatorService"></binding.ws>        		
+        	</reference> 
+    </component>   
+</composite>
